@@ -1,8 +1,8 @@
 // Replace these sample photos and concepts with authorized GARWORKZ project assets.
 export const business = {
   name: 'GARWORKZ',
-  horizontalLogo: null,
-  brandMark: null,
+  horizontalLogo: '/images/logos/garworkz-horizontal.webp',
+  brandMark: '/images/logos/garworkz-mark.webp',
   phone: null,
   email: null,
   location: null,

@@ -12,17 +12,8 @@ import {
 } from './sections/Showcase';
 import Contact from './sections/Contact';
 import Footer from './components/Footer';
-import { business } from './data/content';
 
 export default function App() {
-  useEffect(() => {
-    if (!business.brandMark) return;
-    const favicon = document.createElement('link');
-    favicon.rel = 'icon';
-    favicon.href = business.brandMark;
-    document.head.appendChild(favicon);
-    return () => favicon.remove();
-  }, []);
   useEffect(() => {
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
     const observer = new IntersectionObserver(

@@ -1,23 +1,15 @@
-import { ArrowUpRight, SprayCan } from 'lucide-react';
+import { ArrowUpRight } from 'lucide-react';
 import { business } from '../data/content';
 
 export function Brand({ large = false }) {
-  return business.horizontalLogo ? (
+  return (
     <img
       className={`brand-image ${large ? 'large' : ''}`}
       src={business.horizontalLogo}
       alt="GARWORKZ"
-      width="200"
-      height="80"
+      width="640"
+      height="421"
     />
-  ) : (
-    <span className={`brand ${large ? 'large' : ''}`} aria-label="GARWORKZ">
-      <SprayCan aria-hidden="true" />
-      <span>
-        GAR<span>WORKZ</span>
-      </span>
-      <i />
-    </span>
   );
 }
 

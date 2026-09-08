@@ -138,6 +138,7 @@ test('landscape, very short desktop, images and reduced motion', async ({ page }
     await expect(page.locator('html')).toHaveCSS('scroll-behavior', 'auto');
     await page.locator('.footer').scrollIntoViewIfNeeded();
     for (const image of await page.locator('main img').all()) {
+      if (!(await image.isVisible())) continue;
       await image.scrollIntoViewIfNeeded();
       await expect(image).toHaveJSProperty('complete', true);
       expect(await image.evaluate((element) => element.naturalWidth)).toBeGreaterThan(0);

@@ -236,41 +236,21 @@ textarea:focus-visible {
   color: transparent;
   -webkit-text-stroke: 1px #e2e0e7;
 }
-.brand {
-  display: inline-flex;
-  align-items: center;
-  position: relative;
-  font-family: var(--font-display);
-  font-size: 29px;
-  font-style: italic;
-  font-weight: 800;
-  letter-spacing: -1px;
-  line-height: 1;
-  white-space: nowrap;
-}
-.brand > svg {
-  width: 30px;
-  height: 32px;
-  color: #a24eff;
-  transform: rotate(-18deg);
-  margin-right: 5px;
-}
-.brand > span > span {
-  color: #b072ff;
-}
-.brand i {
-  position: absolute;
-  bottom: -4px;
-  left: 40px;
-  right: 2px;
-  height: 2px;
-  background: #9a30fa;
-  transform: skew(-30deg);
-}
 .brand-image {
-  width: 170px;
-  height: 55px;
+  display: block;
+  width: 128px;
+  height: 84px;
   object-fit: contain;
+  flex-shrink: 0;
+  mix-blend-mode: screen;
+}
+.brand-image.large {
+  width: 230px;
+  height: 151px;
+}
+.footer .brand-image {
+  width: 145px;
+  height: 95px;
 }
 .navbar {
   position: sticky;
@@ -278,7 +258,7 @@ textarea:focus-visible {
   z-index: 30;
   background: #101011f7;
   border-bottom: 1px solid var(--line);
-  height: 83px;
+  height: 96px;
 }
 .nav-inner {
   height: 100%;
@@ -390,7 +370,7 @@ textarea:focus-visible {
   position: relative;
   isolation: isolate;
   min-height: 650px;
-  min-height: min(790px, calc(100svh - 83px));
+  min-height: min(790px, calc(100svh - 96px));
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -470,11 +450,6 @@ textarea:focus-visible {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  transform: rotate(-6deg);
-}
-.hero-stamp .brand {
-  font-size: 38px;
-  text-shadow: 0 2px 15px #000;
 }
 .hero-stamp > span:last-child {
   font-size: 7px;
@@ -1083,7 +1058,7 @@ textarea:focus-visible {
   padding: 20px 14px;
   border: 1px dashed #ffffff35;
   background: #1b191e;
-  min-height: 83px;
+  min-height: 96px;
   color: #aa76da;
 }
 .upload-field > span {
@@ -1363,7 +1338,11 @@ textarea:focus-visible {
     margin-left: auto;
   }
   .navbar {
-    height: 75px;
+    height: 84px;
+  }
+  .brand-image {
+    width: 110px;
+    height: 72px;
   }
   .hero {
     min-height: 650px;
@@ -1729,18 +1708,10 @@ textarea:focus-visible {
   }
 }
 @media (max-width: 390px) {
-  .brand {
-    font-size: 26px;
-  }
-  .brand > svg {
-    width: 25px;
-  }
   .nav-quote {
     display: none;
   }
-  .navbar {
-    height: 68px;
-  }
+
   .hero {
     min-height: 700px;
   }

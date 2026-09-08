@@ -40,7 +40,7 @@ export default function Hero() {
         </div>
       </div>
       <div className="hero-stamp">
-        <Brand />
+        <Brand large />
         <span>CUSTOM PAINT. REAL CHARACTER.</span>
       </div>
       <div className="container hero-bottom">

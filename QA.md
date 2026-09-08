@@ -15,4 +15,6 @@ Verified on September 7, 2026, using headless Microsoft Edge on Windows.
 
 ## Remaining content and integration
 
-Original logo files, real GARWORKZ project images, before/after pairs, detail photography, and confirmed business information are pending. The wordmark, project concepts, comparison treatment, and contact information are placeholders. The form currently saves a local summary; no live backend or deployment has been configured. Physical iPhone/Android and Safari testing has not been performed.
+Logo update verified September 9, 2026: the original GARWORKZ artwork is used in navigation, mobile menu, hero, footer, favicon, and touch icon. Production build and formatting passed. All 13 responsive widths, interactions, and accessibility passed; the image-loading test passed on rerun after being updated to skip the intentionally hidden mobile hero logo. Desktop, tablet, and phone screenshots were inspected. Original PNGs are retained in `assets/brand/`.
+
+Real GARWORKZ project images, before/after pairs, detail photography, and confirmed business information are pending. The original GARWORKZ logos are integrated. Project concepts, comparison treatment, and contact information are placeholders. The form currently saves a local summary; no live backend or deployment has been configured. Physical iPhone/Android and Safari testing has not been performed.

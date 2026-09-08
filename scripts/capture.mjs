@@ -13,7 +13,9 @@ for (const [name, width, height] of [
   await page.setViewportSize({ width, height });
   await page.goto('http://127.0.0.1:5174');
   await page.evaluate(() => document.fonts.ready);
-  for (const image of await page.locator('main img').all()) await image.scrollIntoViewIfNeeded();
+  for (const image of await page.locator('main img').all()) {
+    if (await image.isVisible()) await image.scrollIntoViewIfNeeded();
+  }
   await page.evaluate(() => window.scrollTo(0, 0));
   await page.screenshot({ path: `artifacts/${name}.png`, fullPage: true });
   await page.screenshot({ path: `artifacts/${name}-hero.png` });

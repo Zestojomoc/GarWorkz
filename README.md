@@ -24,11 +24,11 @@ Vite prints the local URL. `npm run build` produces `dist/`; `npm run preview` s
 
 ### Original logos
 
-The two supplied logo designs are visible in the conversation, but the environment only exposed the pasted text attachment as a local file. The site uses a temporary text wordmark. Add the original horizontal logo under `public/images/` and set `business.horizontalLogo` to its path. Its image container preserves aspect ratio. Add the G/spray-gun mark and set `business.brandMark`; use an appropriately sized original mark for the favicon and secondary branding before launch. Do not trace or stretch the supplied artwork.
+The original horizontal logo and G/spray-gun mark are in `assets/brand/`. Optimized copies are in `public/images/logos/`. The original artwork is preserved; only blank outer margins are trimmed and copies resized proportionally for the web. The horizontal logo appears in the navbar, mobile menu, hero, and footer; the G mark supplies the favicon and Apple touch icon. `python scripts/prepare-logos.py` rebuilds these assets with Pillow. Business logo paths are configured in `src/data/content.js`.
 
 ### Content needed before launch
 
-Original logo files, finished-bike project photos and model details, aligned before/after pairs, paint close-ups, customer-bike photos, confirmed services, phone/email, social URLs, address, shop hours, and approved About copy. Remove sample labels only after replacing sample content with verified project material. No prices, testimonials, addresses, or completed-work claims have been fabricated.
+Finished-bike project photos and model details, aligned before/after pairs, paint close-ups, customer-bike photos, confirmed services, phone/email, social URLs, address, shop hours, and approved About copy. Remove sample labels only after replacing sample content with verified project material. No prices, testimonials, addresses, or completed-work claims have been fabricated.
 
 ## Quote form
 
