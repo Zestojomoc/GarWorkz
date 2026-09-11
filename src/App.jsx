@@ -40,7 +40,7 @@ export default function App() {
         <div className="craft-strip" aria-label="Our focus">
           <span>CUSTOM PAINT</span>
           <i />
-          <span>PRECISION PREP</span>
+          <span>PRECISION</span>
           <i />
           <span>PREMIUM FINISH</span>
           <i />
