@@ -45,11 +45,6 @@ export function Transformation() {
             Slide to see the difference.
           </p>
           <QuoteLink className="text-link">Let’s talk about your bike</QuoteLink>
-          <p className="sample-note">
-            Interactive demo: simulated color treatment.
-            <br />
-            Real before-and-after photos coming soon.
-          </p>
         </div>
         <BeforeAfterSlider />
       </div>
