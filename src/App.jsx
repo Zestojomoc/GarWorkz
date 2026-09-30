@@ -38,13 +38,13 @@ export default function App() {
       <main id="main">
         <Hero />
         <div className="craft-strip" aria-label="Our focus">
-          <span>CUSTOM PAINT.</span>
+          <span>CUSTOM PAINT</span>
           <i />
-          <span>PRECISION.</span>
+          <span>PRECISION</span>
           <i />
-          <span>PREMIUM FINISH.</span>
+          <span>PREMIUM FINISH</span>
           <i />
-          <span>PURE CHARACTER.</span>
+          <span>PURE CHARACTER</span>
           <i className="last-dot" />
         </div>
         <Work />
